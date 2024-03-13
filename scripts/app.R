@@ -10,7 +10,6 @@ library(GetoptLong)
 library(ggpmisc)
 library(latex2exp)
 library(openxlsx)
-library(plotly)
 
 # If your analysis functions are in a separate script
 source("scripts/elisa-script.R")
