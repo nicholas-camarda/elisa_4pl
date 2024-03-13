@@ -12,7 +12,7 @@ library(latex2exp)
 library(openxlsx)
 
 # If your analysis functions are in a separate script
-source("scripts/elisa-script.R")
+source("elisa-script.R")
 
 # Adjusted UI definition
 ui <- fluidPage(
@@ -148,7 +148,6 @@ server <- function(input, output, session) {
         unit <- results$data5
         R2_label <- results$data6
 
-        # Note: The req(results$data5) and req(results$data6) were removed as they were not directly used in the plotting code provided.
         p <- make_plot(
             final_plot_data = final_plot_data,
             fit_vals = fit_vals,
